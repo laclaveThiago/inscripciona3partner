@@ -1,8 +1,5 @@
 <?php
-	$host = "localhost";
-	$userName = "root";
-	$password = "";
-	$dbName = "forms";
+	include 'dbConfig.php';
 	
 	// Create database connection
 	$conn = new mysqli($host, $userName, $password, $dbName);
