@@ -20,7 +20,7 @@
 					<!-- Nombre y Apellidos -->
 					<div class="form-group col-md-12">
 						<label for="validationCustom01">Nombre y Apellidos</label>
-						<input type="text" class="form-control" id="validationCustom01" placeholder="Nombre y Apellidos" value="" required>
+						<input type="text" class="form-control" name="nombre" id="validationCustom01" placeholder="Nombre y Apellidos" value="" required>
 						<div class="invalid-feedback">
 							El nombre y apellidos es obligatorio
 						</div>
@@ -29,7 +29,7 @@
 					<!-- Fecha de nacimiento -->
 					<div class="form-group col-md-12">
 						<label>Fecha de nacimiento</label>
-						<input type="text" id="fechacumpleanos" class="form-control" placeholder="Fecha de nacimiento" value="" required>
+						<input type="text" id="fechacumpleanos" name="nacimiento" class="form-control" placeholder="Fecha de nacimiento" value="" required>
 						<div class="invalid-feedback">
 							La fecha de nacimiento es obligatoria
 						</div>
@@ -38,7 +38,7 @@
 					<!-- DNI -->
 					<div class="form-group col-md-12">
 						<label>DNI</label>
-						<input type="text" id="validationCustom02" class="form-control" placeholder="DNI" value="" required>
+						<input type="text" id="validationCustom02" name="dni" class="form-control" placeholder="DNI" value="" required>
 						<div class="invalid-feedback">
 							El DNI es obligatorio
 						</div>
@@ -47,7 +47,7 @@
 					<!-- DNI Fecha de validez -->
 					<div class="form-group col-md-12">
 						<label>DNI fecha validez hasta</label>
-						<input type="text" id="dnivalidez" class="form-control" placeholder="DNI fecha validez hasta" value="" required>
+						<input type="text" id="dnivalidez" class="form-control" name="dnivalidez" placeholder="DNI fecha validez hasta" value="" required>
 						<div class="invalid-feedback">
 							La fecha de validez del DNI es obligatoria
 						</div>
@@ -56,7 +56,7 @@
 					<!-- Telefono -->
 					<div class="form-group col-md-12">
 						<label>Teléfono</label>
-						<input type="text" id="validationCustom03" class="form-control bfh-phone custom-control" data-format="ddd-dd-dd-dd" placeholder="Teléfono" value="" required>
+						<input type="text" id="validationCustom03" class="form-control bfh-phone custom-control" name="telefono" data-format="ddd-dd-dd-dd" placeholder="Teléfono" value="" required>
 						<div class="invalid-feedback">
 							El teléfono es obligatorio
 						</div>
@@ -65,7 +65,7 @@
 					<!-- Email -->
 					<div class="form-group col-md-12">
 						<label>Email</label>
-						<input type="email" id="validationCustom04" class="form-control" placeholder="Email" value="" required>
+						<input type="email" id="validationCustom04" class="form-control" name="email" placeholder="Email" value="" required>
 						<div class="invalid-feedback">
 							El email es obligatorio
 						</div>
@@ -94,7 +94,7 @@
 					<!-- Llegarás el día -->
 					<div class="form-group col-md-12">
 						<label>Llegarás el día</label>
-						<input type="text" id="llegarasdia" class="form-control" placeholder="Llegarás el día" value="" required>
+						<input type="text" id="llegarasdia" name="llegarasdia" class="form-control" placeholder="Llegarás el día" value="" required>
 						<div class="invalid-feedback">
 							La fecha de llegada es obligatoria
 						</div>
@@ -105,7 +105,7 @@
 						<label>Hora de llegada</label>
 						<div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-							<input type="text" name="" class="form-control" placeholder="Hora de llegada" readonly="" required>
+							<input type="text" name="llegarashora" class="form-control" placeholder="Hora de llegada" readonly="" required>
 						</div>
 						<div class="invalid-feedback">
 							La hora de llegada es obligatoria
@@ -144,7 +144,7 @@
 						<label>Hora de salida</label>
 						<div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-							<input type="text" name="" class="form-control" placeholder="Hora de salida" readonly="" required>
+							<input type="text" name="teirashora" class="form-control" placeholder="Hora de salida" readonly="" required>
 						</div>
 						<div class="invalid-feedback">
 							La hora de salida es obligatoria
@@ -155,7 +155,7 @@
 					<!-- Sesión estratégica -->
 					<div class="form-group">
 						<label>Sesión estratégica:*</label>
-						<select class="custom-select" required>
+						<select name="sesion_estrategica" class="custom-select" required>
 							<option value="">Selecciona</option>
 							<option value="Estrategia de Producto y Negocio Despachos Profesionales">Estrategia de Producto y Negocio Despachos Profesionales</option>
 							<option value="Estrategia de Producto y Negocio Pymes">Estrategia de Producto y Negocio Pymes</option>
@@ -181,7 +181,7 @@
 					
 					<div class="form-group">
 						<label>Sesión 1: de 17:30h a 17:55h*</label>
-						<select class="custom-select" required>
+						<select name="sesion1" class="custom-select" required>
 							<option value="">Selecciona una</option>
 							<option value="Desayuno Wolters Kluwer">Desayuno Wolters Kluwer</option>
 							<option value="Amplifica tu marca con Wolters Kluwer">Amplifica tu marca con Wolters Kluwer</option>
@@ -193,7 +193,7 @@
 					
 					<div class="form-group">
 						<label>Sesión 2: de 17:55h a 18:25h*</label>
-						<select class="custom-select" required>
+						<select name="sesion2" class="custom-select" required>
 							<option value="">Selecciona una</option>
 							<option value="Desayuno Wolters Kluwer">Desayuno Wolters Kluwer</option>
 							<option value="Amplifica tu marca con Wolters Kluwer">Amplifica tu marca con Wolters Kluwer</option>
@@ -205,7 +205,7 @@
 					
 					<div class="form-group">
 						<label>Sesión 3: de 18:30h a 18:55h*</label>
-						<select class="custom-select" required>
+						<select name="sesion3" class="custom-select" required>
 							<option value="">Selecciona una</option>
 							<option value="Smart web, Smart content, Smart User…Status y road map">Smart web, Smart content, Smart User…Status y road map</option>
 							<option value="Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad">Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad</option>
@@ -217,7 +217,7 @@
 					
 					<div class="form-group">
 						<label>Sesión 4: de 18:55h a 19:25h</label>
-						<select class="custom-select" required>
+						<select name="sesion4" class="custom-select" required>
 							<option value="">Selecciona una</option>
 							<option value="Smart web, Smart content, Smart User…Status y road map">Smart web, Smart content, Smart User…Status y road map</option>
 							<option value="Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad">Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad</option>
