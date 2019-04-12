@@ -1,0 +1,243 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- styles hubspot -->
+		<link rel="stylesheet" href="https://a3.wolterskluwer.es/hs-fs/hub/2514384/hub_generated/template_assets/1554807563249/Custom/Page/Jornadas-Comerciales-2019/css/jornadas-comerciales.css">
+        <link rel="stylesheet" href="https://a3.wolterskluwer.es/hs-fs/hub/2514384/hub_generated/template_assets/1544719750471/Custom/page/genericos/gdpr-friendly-redesign-form-lateral-02112018.min.css">
+        <link rel="stylesheet" href="https://a3.wolterskluwer.es/hs-fs/hub/2514384/hub_generated/module_assets/1555052646864/module_8768412543_Custom_Page_Jornadas-Comerciales-2019_inscripcion-jornadas-comerciales-formulario.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+        <!-- ./end styles hubspot --> 
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		
+		<!-- moments --> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/eonasdan-bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+		<!-- Bootstrap Form Helpers -->
+		<link href="dist/css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
+		<link href="dist/js/jquery-ui.min.css" rel="stylesheet" media="screen">
+		<!-- Bootstrap Form Helpers -->
+		<script src="dist/js/bootstrap-formhelpers.min.js"></script>
+		
+		
+		
+	</head>
+	<body>
+		<div class="container">
+			<h5>No olvides rellenar todos tus datos antes del 15 de junio para que podamos preparar bien tu llegada al Semestral TAA.</h5>
+			<form name="contact-form" action="response.php" method="post" id="gform_6" class="needs-validation" novalidate>
+  					<div id="asistente1" class="card">
+						<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionAsistente">
+							<div class="card-body">
+								<fieldset>
+									<!-- Nombre -->
+									<div class="form-group row">
+										<div class="col-md-12">
+											<label for="validationCustom01">Nombre</label>
+											<input type="text" class="form-control" name="nombre" id="validationCustom01" placeholder="Nombre" value="" required>
+											<div class="invalid-feedback">
+												El nombre es obligatorio
+											</div>
+										</div>
+									</div>	
+									<!-- Apellidos -->
+									<div class="form-group row">
+										<div class="col-md-12">
+											<label for="validationCustom01">Apellidos</label>
+											<input type="text" class="form-control" name="apellidos" id="validationCustom02" placeholder="Apellidos" value="" required>
+											<div class="invalid-feedback">
+												El apellido es obligatorio
+											</div>
+										</div>
+									</div>	
+									<!-- Email -->
+									<div class="form-group row">
+										<div class="col-md-12">
+											<label>Email</label>
+											<input type="email" id="validationCustom04" name="email" class="form-control" placeholder="Email" value="" required>
+											<div class="invalid-feedback">
+												El email es obligatorio
+											</div>
+										</div>
+									</div>
+									
+									<!-- Unidad de negocio -->
+									<div class="form-group">
+										<label>Unidad de negocio*</label>
+										<select  name="unidad_negocio" class="custom-select" required>
+											<option value="BD &amp; Product Strategy">BD &amp; Product Strategy</option>
+											<option value="BI &amp; Cloud Readiness">BI &amp; Cloud Readiness</option>
+											<option value="Customer Support">Customer Support</option>
+											<option value="Financial">Financial</option>
+											<option value="GBS">GBS</option>
+											<option value="HR">HR</option>
+											<option value="Management Team">Management Team</option>
+											<option value="Marketing &amp; Communication">Marketing &amp; Communication</option>
+											<option value="Sales &amp; Account Management">Sales &amp; Account Management</option>
+											<option value="Software Development">Software Development</option>
+											<option value="Services">Services</option>
+											<option value="(seleccionar)" selected="selected">(seleccionar)</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+								</fieldset>
+								
+								<fieldset>
+									<legend>Desplazamiento y cena</legend>
+									<h3>El punto de encuentro es directamente en el hotel. </h3>
+									<h3>En caso de llegar con vehículo propio, hay plazas de parking limitadas disponibles con un coste de 8€ todo el día (abonando el ticket en recepción). Al agotarse dichas plazas, se abonará la tarifa regular (1,8€/h en la taquilla del parking). </h3>
+									<h3>Dado que la zona de la cena es de difícil aparcamiento, os recomendamos usar el transfer, ya que a la vuelta realizarán distintas paradas: Hotel - Oficinas WK - Pl. España - Pl.</h3> 
+									
+									<!-- ¿Asistirás a la cena? -->
+									¿Asistirás a la cena?*
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" id="customControlValidation21" value="si" name="asistirasalmuerzo" required>
+										<label class="custom-control-label" for="customControlValidation21">Si</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" id="customControlValidation31" value="no" name="asistirasalmuerzo" required>
+										<label class="custom-control-label" for="customControlValidation31">No</label>
+									</div>
+									
+									<!-- Alergia -->
+									<div class="form-group row">
+										<div class="col-md-12">
+											<label>Si tienes algún tipo de alergia indícanos cuál es</label>
+											<input type="alergia" id="validationCustom04" name="alergia" class="form-control" placeholder="Si tienes algún tipo de alergia indícanos cuál es" value="">
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend>Sesiones paralelas </legend>
+									
+									<h3>¿A que sesiones paralelas asistirás?</h3>
+									<h3>Recuerda que tienes que escoger dos de las tres sesiones en cada bloque. </h3>
+									
+									<!-- Sesión estratégica -->
+									<div class="form-group">
+										<label>Sesión estratégica:*</label>
+										<select  name="sesion_estrategica" class="custom-select" required>
+											<option value="">Selecciona</option>
+											<option value="Estrategia de Producto y Negocio Despachos Profesionales">Estrategia de Producto y Negocio Despachos Profesionales</option>
+											<option value="Estrategia de Producto y Negocio Pymes">Estrategia de Producto y Negocio Pymes</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+									
+									<!-- ¿Asistirás al almuerzo del viernes 5 de octubre? -->
+									¿Asistirás al almuerzo del viernes 5 de octubre?*
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" id="customControlValidation21" value="si" name="asistirasalmuerzo" required>
+										<label class="custom-control-label" for="customControlValidation21">Si</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input type="radio" class="custom-control-input" id="customControlValidation31" value="no" name="asistirasalmuerzo" required>
+										<label class="custom-control-label" for="customControlValidation31">No</label>
+									</div>
+									
+									<h3>Sesiones paralelas de Marketing y Comunicación (miércoles 3 de Octubre)</h3>
+									<p>
+										Antes de elegir tus sesiones y actividades te invitamos a consultar la agenda de las Jornadas para ampliar la información de las sesiones y seleccionar a cuales vas a asistir (puedes seleccionar hasta 4, una en cada bloque horario).
+									</p>
+									
+									<div class="form-group">
+										<label>Sesión 1: de 17:30h a 17:55h*</label>
+										<select name="sesion1" class="custom-select" required>
+											<option value="">Selecciona una</option>
+											<option value="Desayuno Wolters Kluwer">Desayuno Wolters Kluwer</option>
+											<option value="Amplifica tu marca con Wolters Kluwer">Amplifica tu marca con Wolters Kluwer</option>
+											<option value="Gestión de talento y comunicación interna">Gestión de talento y comunicación interna</option>
+											<option value="ninguna">ninguna</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+									
+									<div class="form-group">
+										<label>Sesión 2: de 17:55h a 18:25h*</label>
+										<select name="sesion2" class="custom-select" required>
+											<option value="">Selecciona una</option>
+											<option value="Desayuno Wolters Kluwer">Desayuno Wolters Kluwer</option>
+											<option value="Amplifica tu marca con Wolters Kluwer">Amplifica tu marca con Wolters Kluwer</option>
+											<option value="Gestión de talento y comunicación interna">Gestión de talento y comunicación interna</option>
+											<option value="ninguna">ninguna</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+									
+									<div class="form-group">
+										<label>Sesión 3: de 18:30h a 18:55h*</label>
+										<select name="sesion3" class="custom-select" required>
+											<option value="">Selecciona una</option>
+											<option value="Smart web, Smart content, Smart User…Status y road map">Smart web, Smart content, Smart User…Status y road map</option>
+											<option value="Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad">Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad</option>
+											<option value="Explota tu Marketing de Proximidad adaptado a tu negocio">Explota tu Marketing de Proximidad adaptado a tu negocio</option>
+											<option value="ninguna">ninguna</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+									
+									<div class="form-group">
+										<label>Sesión 4: de 18:55h a 19:25h</label>
+										<select name="sesion4" class="custom-select" required>
+											<option value="">Selecciona una</option>
+											<option value="Smart web, Smart content, Smart User…Status y road map">Smart web, Smart content, Smart User…Status y road map</option>
+											<option value="Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad">Rentabiliza y maximiza tu Marketing y Comunicación  con un modelo de trazabilidad</option>
+											<option value="Explota tu Marketing de Proximidad adaptado a tu negocio">Explota tu Marketing de Proximidad adaptado a tu negocio</option>
+											<option value="ninguna">ninguna</option>
+										</select>
+										<div class="invalid-feedback">Debes seleccionar una de las opciones</div>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+					<!-- ./card -->
+				</div>
+				<!-- ./accordion -->
+			  <button class="btn btn-red btn-arrow " type="submit">Enviar</button>
+			</form>
+		</div>
+	</body>
+	<footer>
+	</footer>
+	<script>
+		(function() {
+		  'use strict';
+  
+			
+		})();
+		
+    //Crear input con el calendario
+    $('input[data-ui="date"]').each( function () {
+      $(this).datepicker({
+          uiLibrary: 'bootstrap4',
+          locale: 'es-es'
+      });
+    });	 
+	$('input[data-ui="hours"]').each( function () {
+		$(this).datetimepicker({
+			format: "HH:mm",
+			icons: {
+	            time: 'far fa-clock',
+	            date: 'far fa-calendar',
+	            up: 'fas fa-chevron-up',
+	            down: 'fas fa-chevron-down',
+	            previous: 'fas fa-chevron-left',
+	            next: 'fas fa-chevron-right',
+	            today: 'fas fa-crosshairs',
+	            clear: 'far fa-trash-alt',
+	            close: 'fas fa-times'
+	        }
+		});
+    });	
+	</script>
+</html>
