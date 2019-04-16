@@ -1,8 +1,7 @@
 <?php
 	//DB details
 	$host = "localhost";
-	$userName = "root";
-	$password = "";
-	$dbName = "forms";
-
+	$userName = "laclave_roberto";
+	$password = "Evalcal65rob";
+	$dbName = "laclave_a3forms";
 ?>
