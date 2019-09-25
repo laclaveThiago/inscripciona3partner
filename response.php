@@ -18,10 +18,13 @@
 			}
 		}
 		
+		$empresa_text = $conn->real_escape_string($empresa);
 		$nombre = $conn->real_escape_string($_POST['nombre']);
 		$email = $conn->real_escape_string($_POST['email']);
 		$dni = $conn->real_escape_string($_POST['dni']);
 		$dnivalidez = $conn->real_escape_string($_POST['dnivalidez']);
+		$dniexpedicion = $conn->real_escape_string($_POST['dniexpedicion']);
+		$nacionalidad = $conn->real_escape_string($_POST['nacionalidad']);
 		$fecha_nacimiento = $conn->real_escape_string($_POST['fecha_nacimiento']);
 		$telefono = $conn->real_escape_string($_POST['telefono']);
 		$vendranen = $conn->real_escape_string($_POST['vendranen']);
@@ -30,6 +33,7 @@
 		$teiranen = $conn->real_escape_string($_POST['teiranen']);
 		$teirasdia = $conn->real_escape_string($_POST['teirasdia']);
 		$teiras_hora = $conn->real_escape_string($_POST['teiras_hora']);
+		$actividad = $conn->real_escape_string($_POST['actividad']);
 		$sesion_estrategica = $conn->real_escape_string($_POST['sesion_estrategica']);
 		$asistirasalmuerzo = $conn->real_escape_string($_POST['asistirasalmuerzo']);
 		$sesion1 = $conn->real_escape_string($_POST['sesion1']);
@@ -42,6 +46,8 @@
 											nacimiento, 
 											dni, 
 											dni_validez, 
+											dniexpedicion, 
+											nacionalidad, 
 											telefono, 
 											email, 
 											llegada_en, 
@@ -49,7 +55,8 @@
 											hora_llegada, 
 											salida_en, 
 											dia_salida, 
-											hora_salida, 
+											hora_salida,
+											actividad,	
 											sesion_estrategica, 
 											almuerzo, 
 											sesion_1, 
@@ -57,11 +64,13 @@
 											sesion_3, 
 											sesion_4) 
 		VALUES (
-											'".$empresa."',
+											'".$empresa_text."',
 											'".$nombre."', 
 											'".$fecha_nacimiento."', 
 											'".$dni."',
 											'".$dnivalidez."',
+											'".$dniexpedicion."',
+											'".$nacionalidad."',
 											'".$telefono."',
 											'".$email."',
 											'".$vendranen."',
@@ -70,6 +79,7 @@
 											'".$teiranen."',
 											'".$teirasdia."',
 											'".$teiras_hora."',
+											'".$actividad."',
 											'".$sesion_estrategica."',
 											'".$asistirasalmuerzo."',
 											'".$sesion1."',
@@ -91,6 +101,8 @@
 			$email2 = $conn->real_escape_string($_POST['2email']);
 			$dni2 = $conn->real_escape_string($_POST['2dni']);
 			$dnivalidez2 = $conn->real_escape_string($_POST['2dnivalidez']);
+			$dniexpedicion2 = $conn->real_escape_string($_POST['2dniexpedicion']);
+			$nacionalidad2 = $conn->real_escape_string($_POST['2nacionalidad']);
 			$fecha_nacimiento2 = $conn->real_escape_string($_POST['2fecha_nacimiento']);
 			$telefono2 = $conn->real_escape_string($_POST['2telefono']);
 			$vendranen2 = $conn->real_escape_string($_POST['2vendranen']);
@@ -99,6 +111,7 @@
 			$teiranen2 = $conn->real_escape_string($_POST['2teiranen']);
 			$teirasdia2 = $conn->real_escape_string($_POST['2teirasdia']);
 			$teiras_hora2 = $conn->real_escape_string($_POST['2teiras_hora']);
+			$actividad2 = $conn->real_escape_string($_POST['2actividad']);
 			$sesion_estrategica2 = $conn->real_escape_string($_POST['2sesion_estrategica']);
 			$asistirasalmuerzo2 = $conn->real_escape_string($_POST['2asistirasalmuerzo']);
 			$sesion1_2 = $conn->real_escape_string($_POST['2sesion1']);
@@ -110,7 +123,9 @@
 												nombre, 
 												nacimiento, 
 												dni, 
-												dni_validez, 
+												dni_validez,
+												dniexpedicion, 
+												nacionalidad, 												
 												telefono, 
 												email, 
 												llegada_en, 
@@ -118,7 +133,8 @@
 												hora_llegada, 
 												salida_en, 
 												dia_salida, 
-												hora_salida, 
+												hora_salida,
+												actividad,												
 												sesion_estrategica, 
 												almuerzo, 
 												sesion_1, 
@@ -126,11 +142,13 @@
 												sesion_3, 
 												sesion_4) 
 			VALUES (
-												'".$empresa."',
+												'".$empresa_text."',
 												'".$nombre2."', 
 												'".$fecha_nacimiento2."', 
 												'".$dni2."',
 												'".$dnivalidez2."',
+												'".$dniexpedicion2."',
+												'".$nacionalidad2."',
 												'".$telefono2."',
 												'".$email2."',
 												'".$vendranen2."',
@@ -139,6 +157,7 @@
 												'".$teiranen2."',
 												'".$teirasdia2."',
 												'".$teiras_hora2."',
+												'".$actividad2."',
 												'".$sesion_estrategica2."',
 												'".$asistirasalmuerzo2."',
 												'".$sesion1_2."',
@@ -158,6 +177,8 @@
 			$email3 = $conn->real_escape_string($_POST['3email']);
 			$dni3 = $conn->real_escape_string($_POST['3dni']);
 			$dnivalidez3 = $conn->real_escape_string($_POST['3dnivalidez']);
+			$dniexpedicion3 = $conn->real_escape_string($_POST['3dniexpedicion']);
+			$nacionalidad3 = $conn->real_escape_string($_POST['3nacionalidad']);
 			$fecha_nacimiento3 = $conn->real_escape_string($_POST['3fecha_nacimiento']);
 			$telefono3 = $conn->real_escape_string($_POST['3telefono']);
 			$vendranen3 = $conn->real_escape_string($_POST['3vendranen']);
@@ -166,6 +187,7 @@
 			$teiranen3 = $conn->real_escape_string($_POST['3teiranen']);
 			$teirasdia3 = $conn->real_escape_string($_POST['3teirasdia']);
 			$teiras_hora3 = $conn->real_escape_string($_POST['3teiras_hora']);
+			$actividad3 = $conn->real_escape_string($_POST['3actividad']);
 			$sesion_estrategica3 = $conn->real_escape_string($_POST['3sesion_estrategica']);
 			$asistirasalmuerzo3 = $conn->real_escape_string($_POST['3asistirasalmuerzo']);
 			$sesion1_3 = $conn->real_escape_string($_POST['3sesion1']);
@@ -177,7 +199,9 @@
 												nombre, 
 												nacimiento, 
 												dni, 
-												dni_validez, 
+												dni_validez,
+												dniexpedicion, 
+												nacionalidad, 												
 												telefono, 
 												email, 
 												llegada_en, 
@@ -185,7 +209,8 @@
 												hora_llegada, 
 												salida_en, 
 												dia_salida, 
-												hora_salida, 
+												hora_salida,
+												actividad,
 												sesion_estrategica, 
 												almuerzo, 
 												sesion_1, 
@@ -193,11 +218,13 @@
 												sesion_3, 
 												sesion_4) 
 			VALUES (
-												'".$empresa."',
+												'".$empresa_text."',
 												'".$nombre3."', 
 												'".$fecha_nacimiento3."', 
 												'".$dni3."',
 												'".$dnivalidez3."',
+												'".$dniexpedicion3."',
+												'".$nacionalidad3."',
 												'".$telefono3."',
 												'".$email3."',
 												'".$vendranen3."',
@@ -206,6 +233,7 @@
 												'".$teiranen3."',
 												'".$teirasdia3."',
 												'".$teiras_hora3."',
+												'".$actividad3."',
 												'".$sesion_estrategica3."',
 												'".$asistirasalmuerzo3."',
 												'".$sesion1_3."',
@@ -225,6 +253,8 @@
 			$email4 = $conn->real_escape_string($_POST['4email']);
 			$dni4 = $conn->real_escape_string($_POST['4dni']);
 			$dnivalidez4 = $conn->real_escape_string($_POST['4dnivalidez']);
+			$dniexpedicion4 = $conn->real_escape_string($_POST['4dniexpedicion']);
+			$nacionalidad4 = $conn->real_escape_string($_POST['4nacionalidad']);
 			$fecha_nacimiento4 = $conn->real_escape_string($_POST['4fecha_nacimiento']);
 			$telefono4 = $conn->real_escape_string($_POST['4telefono']);
 			$vendranen4 = $conn->real_escape_string($_POST['4vendranen']);
@@ -233,6 +263,7 @@
 			$teiranen4 = $conn->real_escape_string($_POST['4teiranen']);
 			$teirasdia4 = $conn->real_escape_string($_POST['4teirasdia']);
 			$teiras_hora4 = $conn->real_escape_string($_POST['4teiras_hora']);
+			$actividad4 = $conn->real_escape_string($_POST['4actividad']);
 			$sesion_estrategica4 = $conn->real_escape_string($_POST['4sesion_estrategica']);
 			$asistirasalmuerzo4 = $conn->real_escape_string($_POST['4asistirasalmuerzo']);
 			$sesion1_4 = $conn->real_escape_string($_POST['4sesion1']);
@@ -244,7 +275,9 @@
 												nombre, 
 												nacimiento, 
 												dni, 
-												dni_validez, 
+												dni_validez,
+												dniexpedicion, 
+												nacionalidad, 																								
 												telefono, 
 												email, 
 												llegada_en, 
@@ -252,7 +285,8 @@
 												hora_llegada, 
 												salida_en, 
 												dia_salida, 
-												hora_salida, 
+												hora_salida,
+												actividad,
 												sesion_estrategica, 
 												almuerzo, 
 												sesion_1, 
@@ -260,11 +294,13 @@
 												sesion_3, 
 												sesion_4) 
 			VALUES (
-												'".$empresa."',
+												'".$empresa_text."',
 												'".$nombre4."', 
 												'".$fecha_nacimiento4."', 
 												'".$dni4."',
 												'".$dnivalidez4."',
+												'".$dniexpedicion4."',
+												'".$nacionalidad4."',
 												'".$telefono4."',
 												'".$email4."',
 												'".$vendranen4."',
@@ -273,6 +309,7 @@
 												'".$teiranen4."',
 												'".$teirasdia4."',
 												'".$teiras_hora4."',
+												'".$actividad4."',
 												'".$sesion_estrategica4."',
 												'".$asistirasalmuerzo4."',
 												'".$sesion1_4."',
@@ -293,7 +330,7 @@
 		if(!$result = $conn->query($sql)){
 			die('There was an error running the query [' . $conn->error . ']');
 		}else{
-			header("Location: https://www.laclave.es/");
+			header("Location: http://eventostaa.wolterskluwer.es/jjcc/2019/typ-inscripcion");
 			die();
 		}
 	}
